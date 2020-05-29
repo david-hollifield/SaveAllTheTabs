@@ -80,7 +80,7 @@ namespace SaveAllTheTabs.Commands
             var command = new OleMenuCommand(ExecuteSaveTabsCommand, commandId);
             command.BeforeQueryStatus += CommandOnBeforeQueryStatus;
             commandService.AddCommand(command);
-            Package.Environment.SetKeyBindings(command, "Global::Ctrl+D,Ctrl+S", "Text Editor::Ctrl+D,Ctrl+S");
+            //Package.Environment.SetKeyBindings(command, "Global::Ctrl+D,Ctrl+S", "Text Editor::Ctrl+D,Ctrl+S");
 
             commandId = new CommandID(guid, (int)CommandIds.RestoreTabsListMenu);
             command = new OleMenuCommand(null, commandId);
@@ -93,7 +93,7 @@ namespace SaveAllTheTabs.Commands
             commandId = new CommandID(guid, (int)SavedTabsWindowCommandIds.SavedTabsWindow);
             command = new OleMenuCommand(ExecuteSavedTabsWindowCommand, commandId);
             commandService.AddCommand(command);
-            Package.Environment.SetKeyBindings(command, "Global::Ctrl+D,Ctrl+W", "Text Editor::Ctrl+D,Ctrl+W");
+            //Package.Environment.SetKeyBindings(command, "Global::Ctrl+D,Ctrl+W", "Text Editor::Ctrl+D,Ctrl+W");
 
             guid = typeof(StashCommandIds).GUID;
 
@@ -101,15 +101,15 @@ namespace SaveAllTheTabs.Commands
             command = new OleMenuCommand(ExecuteStashSaveTabsCommand, commandId);
             command.BeforeQueryStatus += CommandOnBeforeQueryStatus;
             commandService.AddCommand(command);
-            Package.Environment.SetKeyBindings(command, "Global::Ctrl+D,Ctrl+C", "Text Editor::Ctrl+D,Ctrl+C");
+            //Package.Environment.SetKeyBindings(command, "Global::Ctrl+D,Ctrl+C", "Text Editor::Ctrl+D,Ctrl+C");
 
             commandId = new CommandID(guid, (int)StashCommandIds.StashRestoreTabs);
             command = new OleMenuCommand(ExecuteStashRestoreTabsCommand, commandId);
             command.BeforeQueryStatus += StashRestoreTabsCommandOnBeforeQueryStatus;
             commandService.AddCommand(command);
-            Package.Environment.SetKeyBindings(command,
-                                               "Global::Ctrl+D,Ctrl+V", "Text Editor::Ctrl+D,Ctrl+V",
-                                               "Global::Ctrl+D,`", "Text Editor::Ctrl+D,`");
+            //Package.Environment.SetKeyBindings(command,
+            //                                   "Global::Ctrl+D,Ctrl+V", "Text Editor::Ctrl+D,Ctrl+V",
+            //                                   "Global::Ctrl+D,`", "Text Editor::Ctrl+D,`");
         }
 
         private void CommandOnBeforeQueryStatus(object sender, EventArgs eventArgs)

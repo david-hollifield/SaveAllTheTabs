@@ -419,6 +419,7 @@
         </CommandPlacement>
     </CommandPlacements>
 
+    <!--
     <KeyBindings>
         <KeyBinding guid="guidPackageCmdSet" id="SaveTabs" editor="guidVSStd97" key1="D" mod1="Control" key2="S" mod2="Control"></KeyBinding>
 
@@ -438,6 +439,7 @@
         <KeyBinding guid="guidRestoreTabsListCmdSet" id="RestoreTabs8" editor="guidVSStd97" key1="D" mod1="Control" key2="8"></KeyBinding>
         <KeyBinding guid="guidRestoreTabsListCmdSet" id="RestoreTabs9" editor="guidVSStd97" key1="D" mod1="Control" key2="9"></KeyBinding>
     </KeyBindings>
+    -->
 
     <Symbols>
         <!-- This is the package guid. -->

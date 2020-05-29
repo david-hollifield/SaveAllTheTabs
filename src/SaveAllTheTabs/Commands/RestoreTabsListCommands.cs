@@ -44,8 +44,8 @@ namespace SaveAllTheTabs.Commands
                 command.BeforeQueryStatus += RestoreTabsCommandOnBeforeQueryStatus;
                 commandService.AddCommand(command);
 
-                var index = GetGroupIndex(command);
-                Package.Environment.SetKeyBindings(command, $"Global::Ctrl+D,{index}", $"Text Editor::Ctrl+D,{index}");
+                //var index = GetGroupIndex(command);
+                //Package.Environment.SetKeyBindings(command, $"Global::Ctrl+D,{index}", $"Text Editor::Ctrl+D,{index}");
             }
         }
 
